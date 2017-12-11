@@ -1,0 +1,44 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Install and Load Libraries}{3}{Install and Load Libraries}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/7}{}{0}}
+\headcommand {\beamer@framepages {3}{7}}
+\headcommand {\beamer@sectionpages {3}{7}}
+\headcommand {\beamer@subsectionpages {3}{7}}
+\headcommand {\sectionentry {2}{Scan in Text Document}{8}{Scan in Text Document}{0}}
+\headcommand {\slideentry {2}{0}{1}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {8}{8}}
+\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\sectionentry {3}{Unpack the Words}{9}{Unpack the Words}{0}}
+\headcommand {\slideentry {3}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@sectionpages {9}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\sectionentry {4}{Remove Stop Words}{10}{Remove Stop Words}{0}}
+\headcommand {\slideentry {4}{0}{1}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@sectionpages {10}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\sectionentry {5}{Obtain Word Frequency}{11}{Obtain Word Frequency}{0}}
+\headcommand {\slideentry {5}{0}{1}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@sectionpages {11}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\sectionentry {6}{Generate Wordcloud}{12}{Generate Wordcloud}{0}}
+\headcommand {\slideentry {6}{0}{1}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\sectionentry {7}{Generate Wordcloud}{13}{Generate Wordcloud}{0}}
+\headcommand {\slideentry {7}{0}{1}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@partpages {1}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@sectionpages {13}{13}}
+\headcommand {\beamer@documentpages {13}}
+\headcommand {\def \inserttotalframenumber {9}}

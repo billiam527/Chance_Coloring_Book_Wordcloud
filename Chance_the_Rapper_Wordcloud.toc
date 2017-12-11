@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Install and Load Libraries}{3}{0}{1}
+\beamer@sectionintoc {2}{Scan in Text Document}{8}{0}{2}
+\beamer@sectionintoc {3}{Unpack the Words}{9}{0}{3}
+\beamer@sectionintoc {4}{Remove Stop Words}{10}{0}{4}
+\beamer@sectionintoc {5}{Obtain Word Frequency}{11}{0}{5}
+\beamer@sectionintoc {6}{Generate Wordcloud}{12}{0}{6}
+\beamer@sectionintoc {7}{Generate Wordcloud}{13}{0}{7}

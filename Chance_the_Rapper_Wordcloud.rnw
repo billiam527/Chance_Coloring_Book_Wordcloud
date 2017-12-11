@@ -1,0 +1,103 @@
+\documentclass{beamer}
+
+\begin{document}
+
+\title{Chance the Rapper - Coloring Book Wordcloud}
+\author{Bill Fisher}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Install and Load Libraries}
+\begin{frame}[fragile]
+  \frametitle{Install and Load Libraries}
+    \begin{itemize}
+      \item<1->
+        <<warning=FALSE,message=FALSE>>=
+        library(dplyr)
+        @
+      \item<2->
+        <<warning=FALSE,message=FALSE>>=
+        library(tidytext)
+        @
+      \item<3->
+        <<warning=FALSE,message=FALSE>>=
+        library(wordcloud)
+        @
+      \item<4->
+        <<warning=FALSE,message=FALSE>>=
+        library(tm)
+        @
+      \item<5->
+        <<warning=FALSE,message=FALSE>>=
+        library(stringr)
+        @
+    
+    \end{itemize}
+\end{frame}
+
+\section{Scan in Text Document}
+\begin{frame}[fragile]
+  \frametitle{Scan in Text Document}
+    <<message=FALSE,warning=FALSE>>=
+    chance_cb<-scan('chance_coloringbook.txt',what=character(),sep='\n')
+    head(chance_cb)
+    @
+\end{frame}
+
+\section{Unpack the Words}
+\begin{frame}[fragile]
+  \frametitle{Unpack the Words}
+    <<warning=FALSE,message=FALSE>>=
+    chance_cb<-data_frame(line=1:1038, text=chance_cb)
+    chance_words<-chance_cb%>%
+      unnest_tokens(word, text)
+    @
+\end{frame}
+
+\section{Remove Stop Words}
+\begin{frame}[fragile]
+  \frametitle{Remove Stop Words}
+    <<warning=FALSE,message=FALSE>>=
+    chance_words<-chance_words%>%
+      filter(!(word %in% stop_words$word))
+    print(chance_words,n=5)
+    @
+\end{frame}
+
+\section{Obtain Word Frequency}
+\begin{frame}[fragile]
+  \frametitle{Obtain Word Frequency}
+  <<warning=FALSE,message=FALSE>>=
+    chance_word_freq<-chance_words%>%
+      group_by(word)%>%
+      summarize(count=n())
+    print(chance_word_freq,n=5)
+  @
+\end{frame}
+
+\section{Generate Wordcloud}
+\begin{frame}[fragile]
+  \frametitle{Generate Wordcloud}
+  <<>>=
+    #wordcloud(chance_word_freq$word, 
+    #chance_word_freq$count, min.freq=5)
+    
+    #Note: Displaying compiled Wordcloud in next slide so 
+    #figure displays properly on screen
+  @
+\end{frame}
+
+\section{Generate Wordcloud}
+\begin{frame}[fragile]
+  \frametitle{Generate Wordcloud}
+\includegraphics[scale=0.25]{Chance_Rplot}
+\end{frame}
+  
+\end{document}
